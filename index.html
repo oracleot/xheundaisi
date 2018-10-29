@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Xheun Ikudaisi | Welcome</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+        <style>
+            #hiddenDude{
+                display: none
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar my-dark-bg" role="navigation" aria-label="main navigation">
+            <div class="container my-y-padding">
+                <div class="navbar-brand">
+                    <a href="https://bulma.io">
+                        <img src="img/logo.png">
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <img id="menuId" src="img/menu.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="hiddenDude">
+            hidden dude
+        </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                var menuItem = document.getElementById('menuId');
+                var hiddenMenu = document.getElementById('hiddenDude');
+
+                menuItem.addEventListener('click', ()=>{
+                    hiddenMenu.style.display = 'block'
+                })
+            })
+        </script>
+
+    </body>
+
+</html>

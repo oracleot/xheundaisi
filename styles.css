@@ -1,0 +1,12 @@
+.my-light-bg{
+    background: rgba(0,0,0,0.2)
+}
+
+.my-dark-bg{
+    background: rgb(0,0,0)
+}
+
+.my-y-padding{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
